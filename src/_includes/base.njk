@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business Coach Liubov Mukash in Berlin.">
+    <title>{{ title }}</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/assets/style.css">
+    
+    <!-- Netlify Identity Widget for CMS Login -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="#">Liubov Mukash</a>
+                <span class="logo-sub">Business Coach</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <a href="#willkommen">Willkommen</a>
+                <a href="#schwerpunkte">Schwerpunkte</a>
+                <a href="#ueber-mich">Über Mich</a>
+                <a href="#kontakt">Kontakt</a>
+                <a href="#termin" class="btn btn-primary mobile-only-btn" onclick="openCalendar()">Termin vereinbaren</a>
+            </nav>
+            <a href="#termin" class="btn btn-primary hide-on-mobile" onclick="openCalendar()">Termin vereinbaren</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>{{ hero_headline | safe }}</h1>
+                    <p>{{ hero_subheadline }}</p>
+                    <div class="hero-actions">
+                        <a href="#termin" class="btn btn-primary btn-large" onclick="openCalendar()">Termin vereinbaren</a>
+                        <a href="#schwerpunkte" class="btn btn-outline btn-large">Meine Schwerpunkte</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <span>Foto Liubov Mukash</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="welcome" id="willkommen">
+            <div class="container welcome-content">
+                <div class="section-header center">
+                    <span class="subtitle">Selbst-Management in Leben und Beruf</span>
+                    <h2>Herzlich willkommen!</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="welcome-text">
+                    <p class="lead">{{ welcome_lead }}</p>
+                    <p>{{ welcome_body }}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Static Services & About Sections omitted for brevity, CMS focus on Hero/Welcome for MVP -->
+        <!-- Content from index.md is injected here if there is a body, but we use frontmatter above -->
+        {{ content | safe }}
+
+        <!-- CTA Section -->
+        <section class="cta bg-primary text-white" id="kontakt">
+            <div class="container cta-content center">
+                <h2>Lassen Sie uns zusammenarbeiten</h2>
+                <div class="cta-buttons">
+                    <a href="#termin" class="btn btn-white btn-large" onclick="openCalendar()">Termin im Kalender buchen</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Calendar HTML omitted for brevity but should be here -->
+    
+    <script src="/assets/script.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+          }
+        });
+      }
+    </script>
+</body>
+</html>
