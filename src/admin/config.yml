@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Seiten (Pages)"
+    files:
+      - label: "Startseite (Home)"
+        name: "home"
+        file: "src/index.md"
+        fields:
+          - {label: "Browser Title", name: "title", widget: "string"}
+          - {label: "Hero Überschrift", name: "hero_headline", widget: "string"}
+          - {label: "Hero Untertitel", name: "hero_subheadline", widget: "string"}
+          - {label: "Welcome Text (Bold)", name: "welcome_lead", widget: "text"}
+          - {label: "Welcome Text (Body)", name: "welcome_body", widget: "text"}
