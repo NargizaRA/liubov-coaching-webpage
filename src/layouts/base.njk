@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="{% if '/ru' in page.url %}ru{% else %}de{% endif %}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,23 +17,278 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+    {% set is_ru = false %}
+    {% if page.url and '/ru' in page.url %}
+        {% set is_ru = true %}
+    {% endif %}
+
     <!-- Navbar -->
     <header class="navbar">
         <div class="container nav-content">
             <div class="logo">
                 <a href="#">Liubov Mukash</a>
-                <span class="logo-sub">Business Coach</span>
+                <span class="logo-sub">{% if is_ru %}Бизнес-коуч{% else %}Business Coach{% endif %}</span>
             </div>
+            
+            <div class="lang-switcher" style="display: flex; gap: 8px; margin-left: auto; margin-right: 20px; font-weight: 600; font-size: 0.9rem;">
+                <a href="/" style="text-decoration: none; color: {% if is_ru %}#888{% else %}#1e3a8a{% endif %};">DE</a>
+                <span style="color: #ccc;">|</span>
+                <a href="/ru/" style="text-decoration: none; color: {% if is_ru %}#1e3a8a{% else %}#888{% endif %};">RU</a>
+            </div>
+
             <div class="hamburger" id="hamburger">
                 <span></span><span></span><span></span>
             </div>
             <nav class="nav-links" id="nav-links">
+                {% if is_ru %}
+                <a href="#willkommen">Главная</a>
+                <a href="#schwerpunkte">Услуги</a>
+                <a href="#ueber-mich">Обо мне</a>
+                <a href="#kontakt">Контакты</a>
+                <a href="#termin" class="btn btn-primary mobile-only-btn" onclick="openCalendar()">Записаться на встречу</a>
+                {% else %}
                 <a href="#willkommen">Willkommen</a>
                 <a href="#schwerpunkte">Schwerpunkte</a>
                 <a href="#ueber-mich">Über Mich</a>
                 <a href="#kontakt">Kontakt</a>
                 <a href="#termin" class="btn btn-primary mobile-only-btn" onclick="openCalendar()">Termin vereinbaren</a>
+                {% endif %}
             </nav>
+            <a href="#termin" class="btn btn-primary hide-on-mobile" onclick="openCalendar()">{% if is_ru %}Записаться на встречу{% else %}Termin vereinbaren{% endif %}</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>{{ hero_headline | safe }}</h1>
+                    <p>{{ hero_subheadline }}</p>
+                    <div class="hero-actions">
+                        <a href="#termin" class="btn btn-primary btn-large" onclick="openCalendar()">{% if is_ru %}Записаться на встречу{% else %}Termin vereinbaren{% endif %}</a>
+                        <a href="#schwerpunkte" class="btn btn-outline btn-large">{% if is_ru %}Мои услуги{% else %}Meine Schwerpunkte{% endif %}</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <span>Foto Liubov Mukash</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="welcome" id="willkommen">
+            <div class="container welcome-content">
+                <div class="section-header center">
+                    <span class="subtitle">{% if is_ru %}Самоорганизация в жизни и работе{% else %}Selbst-Management in Leben und Beruf{% endif %}</span>
+                    <h2>{% if is_ru %}Добро пожаловать!{% else %}Herzlich willkommen!{% endif %}</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="welcome-text">
+                    <p class="lead">{{ welcome_lead }}</p>
+                    <p>{{ welcome_body }}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schwerpunkte Section -->
+        <section class="services bg-light" id="schwerpunkte">
+            <div class="container services-content">
+                <div class="section-header center">
+                    <span class="subtitle">{{ services_subtitle }}</span>
+                    <h2>{{ services_title }}</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="services-grid">
+                    {% for service in services %}
+                    <div class="service-card">
+                        <div class="icon-box">
+                            {% if loop.index == 1 %}
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            {% elif loop.index == 2 %}
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            {% elif loop.index == 3 %}
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                            {% else %}
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            {% endif %}
+                        </div>
+                        <h3>{{ service.title }}</h3>
+                        <p>{{ service.desc }}</p>
+                        <ul>
+                            {% for item in service.bullets %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="ueber-mich">
+            <div class="container about-wrapper" style="display: grid; grid-template-columns: 1fr; gap: 4rem; align-items: center;">
+                <div class="about-content">
+                    <div class="section-header">
+                        <span class="subtitle">{{ about_subtitle }}</span>
+                        <h2>{{ about_title }}</h2>
+                        <div class="line"></div>
+                    </div>
+                    <p>{{ about_text }}</p>
+                    <ul class="feature-list">
+                        {% for feature in about_features %}
+                        <li>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            {{ feature }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="about-quote">
+                    <div class="quote-box">
+                        {{ about_quote }}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{ content | safe }}
+        {{ content | safe }}
+
+        <!-- CTA Section -->
+        <section class="cta bg-primary text-white" id="kontakt">
+            <div class="container cta-content center">
+                <h2>{{ cta_title }}</h2>
+                <div class="cta-buttons">
+                    <a href="#termin" class="btn btn-white btn-large" onclick="openCalendar()">{% if is_ru %}Забронировать встречу{% else %}Termin im Kalender buchen{% endif %}</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Liubov Mukash</h3>
+                <p>Business Coach für Führungskräfte, Teams & Organisationen in Berlin.</p>
+            </div>
+            <div class="footer-col">
+                <h4>{% if is_ru %}Контакты{% else %}Kontakt{% endif %}</h4>
+                <ul>
+                    <li>Email: {{ footer_email }}</li>
+                    <li>Telefon: {{ footer_phone }}</li>
+                    <li>{{ footer_location }}</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>{% if is_ru %}Правовая информация{% else %}Rechtliches{% endif %}</h4>
+                <ul>
+                    <li><a href="#">{% if is_ru %}Импрессум{% else %}Impressum{% endif %}</a></li>
+                    <li><a href="#">{% if is_ru %}Конфиденциальность{% else %}Datenschutz{% endif %}</a></li>
+                    <li><a href="#">{% if is_ru %}Политика Cookie{% else %}Cookie-Richtlinie{% endif %}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Liubov Mukash Coaching. {% if is_ru %}Все права защищены.{% else %}Alle Rechte vorbehalten.{% endif %}</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>{% if is_ru %}Мы используем файлы cookie для улучшения работы сайта. Дополнительная информация в нашей Политике конфиденциальности.{% else %}Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Weitere Informationen finden Sie in unserer Datenschutzerklärung.{% endif %}</p>
+            <div class="cookie-actions">
+                <button id="accept-cookies" class="btn btn-primary btn-small">{% if is_ru %}Принять{% else %}Akzeptieren{% endif %}</button>
+                <button id="decline-cookies" class="btn btn-outline btn-small">{% if is_ru %}Отклонить{% else %}Ablehnen{% endif %}</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendar Modal -->
+    <div id="calendar-modal" class="modal">
+        <div class="modal-content calendar-modal-content">
+            <span class="close-btn" onclick="closeCalendar()">&times;</span>
+            <div class="calendar-layout">
+                <div class="calendar-info">
+                    <h2>{% if is_ru %}Бесплатная консультация{% else %}Kostenloses Erstgespräch{% endif %}</h2>
+                    <p>{% if is_ru %}Познакомьтесь со мной и моим подходом без обязательств.{% else %}Lernen Sie mich und meine Arbeitsweise unverbindlich kennen.{% endif %}</p>
+                    <div class="divider"></div>
+                    <div class="info-item">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        {% if is_ru %}30 минут{% else %}30 Minuten{% endif %}
+                    </div>
+                    <div class="info-item">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                        {% if is_ru %}Онлайн (Zoom/Teams) или телефон{% else %}Online (Zoom/Teams) oder Telefon{% endif %}
+                    </div>
+                    <div class="divider"></div>
+                    <form id="calendar-form">
+                        <span class="selected-date">{% if is_ru %}Выбранная дата:{% else %}Ausgewähltes Datum:{% endif %} --</span>
+                        <br><br>
+                        <button type="submit" class="btn btn-primary confirm-btn">{% if is_ru %}Подтвердить запись{% else %}Termin bestätigen{% endif %}</button>
+                    </form>
+                </div>
+                <div class="calendar-picker">
+                    <div class="calendar-header">
+                        <h3>{% if is_ru %}Дата и время{% else %}Datum & Uhrzeit{% endif %}</h3>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <button class="calendar-nav">&lt;</button>
+                            <span class="month-year">März 2026</span>
+                            <button class="calendar-nav">&gt;</button>
+                        </div>
+                    </div>
+                    <div class="calendar-grid days">
+                        <span>{% if is_ru %}Пн{% else %}Mo{% endif %}</span><span>{% if is_ru %}Вт{% else %}Di{% endif %}</span><span>{% if is_ru %}Ср{% else %}Mi{% endif %}</span><span>{% if is_ru %}Чт{% else %}Do{% endif %}</span><span>{% if is_ru %}Пт{% else %}Fr{% endif %}</span><span>{% if is_ru %}Сб{% else %}Sa{% endif %}</span><span>{% if is_ru %}Вс{% else %}So{% endif %}</span>
+                    </div>
+                    <div class="calendar-grid dates">
+                        <span></span><span></span><span></span><span></span>
+                        <span class="available">1</span><span class="available">2</span><span class="available">3</span>
+                        <span class="available">4</span><span class="available">5</span><span class="available">6</span>
+                    </div>
+                    
+                    <div class="time-slots">
+                        <h4>{% if is_ru %}Доступное время:{% else %}Verfügbare Zeiten:{% endif %}</h4>
+                        <div class="slots">
+                            <button class="slot-btn">09:00</button>
+                            <button class="slot-btn">10:30</button>
+                            <button class="slot-btn">14:00</button>
+                            <button class="slot-btn">16:30</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("z92yMLyHtlVuNj321"); // The public key from EmailJS
+            window.IS_RU = {{ 'true' if is_ru else 'false' }};
+        })();
+    </script>
+    <script src="/assets/script.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+          }
+        });
+        
+        // Force the modal to open if there is an invite or recovery token in the URL
+        if (window.location.hash.includes('_token=')) {
+            window.netlifyIdentity.open();
+        }
+      }
+    </script>
+</body>
+</html>
             <a href="#termin" class="btn btn-primary hide-on-mobile" onclick="openCalendar()">Termin vereinbaren</a>
         </div>
     </header>
