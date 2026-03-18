@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 
+# These folders configure where uploaded images are saved
 media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
 
@@ -14,6 +15,7 @@ collections:
         file: "src/index.md"
         fields:
           - {label: "Browser Title", name: "title", widget: "string"}
+          - {label: "Hero Bild", name: "hero_image", widget: "image", required: false}
           - {label: "Hero Überschrift", name: "hero_headline", widget: "string"}
           - {label: "Hero Untertitel", name: "hero_subheadline", widget: "string"}
           - {label: "Welcome Text (Bold)", name: "welcome_lead", widget: "text"}
@@ -54,6 +56,7 @@ collections:
         file: "src/ru/index.md"
         fields:
           - {label: "Browser Title", name: "title", widget: "string"}
+          - {label: "Hero Bild", name: "hero_image", widget: "image", required: false}
           - {label: "Hero Überschrift", name: "hero_headline", widget: "string"}
           - {label: "Hero Untertitel", name: "hero_subheadline", widget: "string"}
           - {label: "Welcome Text (Bold)", name: "welcome_lead", widget: "text"}
