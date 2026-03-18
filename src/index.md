@@ -1,5 +1,6 @@
 ---
 title: Liubov Mukash | Business Coach und Trainerin für Verhalten und Kommunikation
+hero_image: /assets/uploads/dsc03528.jpg
 hero_headline: Potenzial entfalten. Klarheit gewinnen. Wirksam gestalten.
 hero_subheadline: Als Business Coach und Trainerin begleite ich Menschen dabei,
   Komplexität zu bewältigen, Klarheit zu gewinnen, ihre Resilienz zu stärken und
@@ -60,8 +61,8 @@ about_features:
   - Fokus auf nachhaltige Veränderung
 about_quote: '"Wahre Führung beginnt mit der Bereitschaft, sich selbst zu führen."'
 cta_title: Lassen Sie uns zusammenarbeiten
-footer_email: kontakt@liubov-mukash.de
 footer_phone: auf Anfrage
 layout: base.njk
+footer_email: kontakt@liubov-mukash.de
 footer_location: Berlin, Deutschland
 ---
