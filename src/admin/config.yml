@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Seiten (Pages)"
+    files:
+      - label: "Startseite (Home)"
+        name: "home"
+        file: "src/index.md"
+        fields:
+          - {label: "Browser Title", name: "title", widget: "string"}
+          - {label: "Hero Überschrift", name: "hero_headline", widget: "string"}
+          - {label: "Hero Untertitel", name: "hero_subheadline", widget: "string"}
+          - {label: "Welcome Text (Bold)", name: "welcome_lead", widget: "text"}
+          - {label: "Welcome Text (Body)", name: "welcome_body", widget: "text"}
+          
+          # --- Schwerpunkte (Services) ---
+          - {label: "Schwerpunkte Untertitel", name: "services_subtitle", widget: "string"}
+          - {label: "Schwerpunkte Überschrift", name: "services_title", widget: "string"}
+          - label: "Dienstleistungen (Services)"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Kurzbeschreibung", name: "desc", widget: "text"}
+              - label: "Stichpunkte"
+                name: "bullets"
+                widget: "list"
+                field: {label: "Punkt", name: "item", widget: "string"}
+          
+          # --- Über Mich (About) ---
+          - {label: "Über Mich Untertitel", name: "about_subtitle", widget: "string"}
+          - {label: "Über Mich Überschrift", name: "about_title", widget: "string"}
+          - {label: "Über Mich Text", name: "about_text", widget: "text"}
+          - label: "Qualifikationen (Checkliste)"
+            name: "about_features"
+            widget: "list"
+            field: {label: "Feature", name: "item", widget: "string"}
+          - {label: "Zitat", name: "about_quote", widget: "text"}
+          
+          # --- CTA und Footer ---
+          - {label: "Call to Action Überschrift", name: "cta_title", widget: "string"}
+          - {label: "Email", name: "footer_email", widget: "string"}
+          - {label: "Telefon", name: "footer_phone", widget: "string"}
+          - {label: "Ort", name: "footer_location", widget: "string"}
