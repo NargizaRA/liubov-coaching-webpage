@@ -1,6 +1,5 @@
 ---
 title: Liubov Mukash | Business Coach und Trainerin für Verhalten und Kommunikation
-hero_image: /assets/uploads/dsc03528.jpg
 hero_headline: Potenzial entfalten. Klarheit gewinnen. Wirksam gestalten.
 hero_subheadline: Als Business Coach und Trainerin begleite ich Menschen dabei,
   Komplexität zu bewältigen, Klarheit zu gewinnen, ihre Resilienz zu stärken und
@@ -10,19 +9,19 @@ welcome_lead: In meiner Arbeit als Coach und Trainerin verstehe ich mich als
   vorzugeben. Vielmehr begleite ich Sie mit den richtigen Fragen dabei, Ihre
   eigene Klarheit zu gewinnen und Ihren individuellen Weg souverän zu gestalten.
 welcome_body: >-
-  Sie sind bei mir richtig, wenn ...
+  Wo wollen Sie ansetzten? Sie sind bei mir richtig, wenn
 
-  ... Sie vor komplexen beruflichen Entscheidungen stehen und eine neutrale Sparringspartnerin suchen, um Ihre Handlungsoptionen systemisch zu sortieren.
+  * Sie vor komplexen beruflichen Entscheidungen stehen und eine neutrale Sparringspartnerin suchen, um Ihre Handlungsoptionen systemisch zu sortieren.
 
-  ... die Kommunikation in Ihrem Team hakt und Sie durch gezieltes Verhaltenstraining wieder eine produktive und wertschätzende Arbeitsatmosphäre schaffen wollen.
+  * die Kommunikation in Ihrem Team hakt und Sie durch gezieltes Verhaltenstraining wieder eine produktive und wertschätzende Arbeitsatmosphäre schaffen wollen.
 
-  ... Sie Ihre Selbstführung professionalisieren möchten, um auch in Hochdruckphasen gelassen, resilient und fokussiert zu bleiben.
+  * Sie Ihre Selbstführung professionalisieren möchten, um auch in Hochdruckphasen gelassen, resilient und fokussiert zu bleiben.
 
-  ... Sie in einer Führungsposition Ihre Wirkung verstärken wollen, ohne sich zu verbiegen – durch klare Positionierung und souveränes Auftreten.
+  * Sie in einer Führungsposition Ihre Wirkung verstärken wollen, ohne sich zu verbiegen – durch klare Positionierung und souveränes Auftreten.
 
-  ... Sie an einem Wendepunkt Ihrer Karriere stehen und eine objektive Begleitung brauchen, um Ihre nächsten Schritte strategisch und typgerecht zu planen.
+  * Sie an einem Wendepunkt Ihrer Karriere stehen und eine objektive Begleitung brauchen, um Ihre nächsten Schritte strategisch und typgerecht zu planen.
 
-  ... Sie verkrustete Verhaltensmuster aufbrechen wollen, um im Business-Alltag schlagfertiger, klarer und wirksamer zu kommunizieren.
+  * Sie verkrustete Verhaltensmuster aufbrechen wollen, um im Business-Alltag schlagfertiger, klarer und wirksamer zu kommunizieren.
 services_subtitle: Meine Expertise
 services_title: Schwerpunkte im Coaching
 services:
@@ -61,8 +60,9 @@ about_features:
   - Fokus auf nachhaltige Veränderung
 about_quote: '"Wahre Führung beginnt mit der Bereitschaft, sich selbst zu führen."'
 cta_title: Lassen Sie uns zusammenarbeiten
+footer_email: kontakt@liubov-mukash.de
 footer_phone: auf Anfrage
 layout: base.njk
-footer_email: kontakt@liubov-mukash.de
+hero_image: /assets/uploads/dsc03528.jpg
 footer_location: Berlin, Deutschland
 ---
