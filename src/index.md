@@ -1,14 +1,14 @@
 ---
 title: Liubov Mukash | Business Coach und Trainerin für Verhalten und Kommunikation
 hero_image: /assets/uploads/dsc03528.jpg
-hero_headline: Potenzial entfalten. Klarheit gewinnen. Wirksam gestalten.
+hero_headline: Klarheit gewinnen. Potenzial entfalten. Wirksam gestalten.
 hero_subheadline: Als Business Coach und Trainerin begleite ich Menschen dabei,
-  Komplexität zu bewältigen, Klarheit zu gewinnen, ihre Resilienz zu stärken und
-  sich authentisch zu positionieren.
-welcome_lead: In meiner Arbeit als Coach und Trainerin verstehe ich mich als
-  Partnerin auf Augenhöhe. Mein Anspruch ist es nicht, fertige Lösungen
-  vorzugeben. Vielmehr begleite ich Sie mit den richtigen Fragen dabei, Ihre
-  eigene Klarheit zu gewinnen und Ihren individuellen Weg souverän zu gestalten.
+  Komplexität zu bewältigen, ihre Resilienz zu stärken und sich authentisch zu
+  positionieren.
+welcome_lead: In meiner Arbeit als Coach verstehe ich mich als Partnerin auf
+  Augenhöhe. Gerne begleite ich Sie mit den richtigen Fragen auf Ihrem Weg,
+  wobei Sie Ihre eigene Klarheit gewinnen und Ihren individuellen Weg souverän
+  gestalten können.
 welcome_body: >-
   Wo wollen Sie ansetzten? Sie sind bei mir richtig, wenn
 
@@ -59,7 +59,7 @@ about_features:
   - Zertifizierter Business Coach
   - Langjährige Führungserfahrung
   - Fokus auf nachhaltige Veränderung
-about_quote: '"Wahre Führung beginnt mit der Bereitschaft, sich selbst zu führen." Zitat'
+about_quote: '"Nur wer sich selbst führen kann, kann andere führen" Pater Anselm Grün'
 cta_title: Lassen Sie uns zusammenarbeiten
 footer_phone: auf Anfrage
 layout: base.njk
