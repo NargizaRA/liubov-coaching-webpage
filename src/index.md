@@ -5,22 +5,24 @@ hero_headline: Klarheit gewinnen. Potenzial entfalten. Wirksam gestalten.
 hero_subheadline: Als Business Coach und Trainerin begleite ich Menschen dabei,
   Komplexität zu bewältigen, ihre Resilienz zu stärken und sich authentisch zu
   positionieren.
-welcome_lead: In meiner Arbeit als Coach verstehe ich mich als Partnerin auf
-  Augenhöhe. Gerne begleite ich Sie mit den richtigen Fragen auf Ihrem Weg,
-  wobei Sie Ihre eigene Klarheit gewinnen und Ihren individuellen Weg souverän
-  gestalten können.
+welcome_lead: >-
+  In meiner Arbeit als Coach verstehe ich mich als Partnerin auf Augenhöhe.
+  Gerne begleite ich Sie mit den richtigen Fragen auf Ihrem Weg, wobei Sie Ihre
+  eigene Klarheit gewinnen und Ihren individuellen Weg souverän gestalten
+  können.
+
+  Wo wollen Sie ansetzten? Sie sind bei mir richtig, wenn:
 welcome_body: >-
-  Wo wollen Sie ansetzten? Sie sind bei mir richtig, wenn
+  * Sie Ihre Selbstführung professionalisieren möchten, um auch in
+  Hochdruckphasen gelassen, resilient und fokussiert zu bleiben.
+
+  * Sie in einer Führungsposition Ihre Wirkung verstärken wollen – durch klare Positionierung und souveränes Auftreten.
+
+  * Sie an einem Wendepunkt Ihrer Karriere stehen und eine objektive Begleitung brauchen, um Ihre nächsten Schritte strategisch und typgerecht zu planen.
 
   * Sie vor komplexen beruflichen Entscheidungen stehen und eine neutrale Sparringspartnerin suchen, um Ihre Handlungsoptionen systemisch zu sortieren.
 
   * die Kommunikation in Ihrem Team hakt und Sie durch gezieltes Verhaltenstraining wieder eine produktive und wertschätzende Arbeitsatmosphäre schaffen wollen.
-
-  * Sie Ihre Selbstführung professionalisieren möchten, um auch in Hochdruckphasen gelassen, resilient und fokussiert zu bleiben.
-
-  * Sie in einer Führungsposition Ihre Wirkung verstärken wollen, ohne sich zu verbiegen – durch klare Positionierung und souveränes Auftreten.
-
-  * Sie an einem Wendepunkt Ihrer Karriere stehen und eine objektive Begleitung brauchen, um Ihre nächsten Schritte strategisch und typgerecht zu planen.
 
   * Sie verkrustete Verhaltensmuster aufbrechen wollen, um im Business-Alltag schlagfertiger, klarer und wirksamer zu kommunizieren.
 services_subtitle: Meine Expertise
