@@ -55,9 +55,20 @@ services:
       - Change-Management im Team begleiten
 about_subtitle: Berufliche Qualifikation
 about_title: Über Mich
-about_text: Ich coache Führungskräfte und Teams in Unternehmen individuell und
-  passgenau. Verlassen Sie eingefahrene Strukturen und schaffen Sie Raum für
-  neue Perspektiven.
+about_text: >+
+  Ich begleite Fach- und Führungskräfte, Teams sowie Persönlichkeiten, die vor
+  beruflichen Veränderungen stehen, strategische Klarheit suchen und neue
+  Perspektiven einnehmen wollen.
+
+  Mein Fundament bildet ein tiefes Verständnis für menschliche Dynamiken in Veränderungsprozessen. Geprägt durch eine Kindheit in Usbekistan und eine Jugend in den Weiten Sibiriens, habe ich früh gelernt: Erfolgreiche Kommunikation und starke Führung gehen weit über das gesprochene Wort hinaus. Sie erfordern Authentizität, eine gute Beobachtungsgabe, emotionale Intelligenz und die Fähigkeit, auch in komplexen, unvorhersehbaren Situationen souverän zu agieren.
+
+  Diese Kernkompetenzen habe ich nach meinem Pädagogikstudium und einem anschließenden Studium im Tourismusmanagement in Berlin jahrelang im internationalen Umfeld unter Beweis gestellt. Als Managerin in der globalen Reisebranche habe ich tagtäglich in interkulturellen Teams agiert, habe Konflikte in High-Pressure-Situationen gelöst und strategische Veränderungsprozesse erfolgreich gesteuert.
+
+  Dieses fundierte Praxiswissen habe ich durch zertifizierte Ausbildungen zur systemischen Business Coach und Trainerin für Verhalten und Kommunikation professionalisiert. Heute unterstütze ich meine Klienten dabei, festgefahrene Denkmuster aufzubrechen, Konflikte souverän zu lösen und Kommunikation zielgerichtet einzusetzen – sei es für den nächsten Karriereschritt, die persönliche Weiterentwicklung oder den Erfolg im Team.
+
+  Jede Veränderung braucht Mut – und eine präzise Strategie. Ich begleite Sie strukturiert, praxisnah und mit einem klaren Fokus auf das, was Sie und Ihre Organisation nachhaltig voranbringt.
+
+
 about_features:
   - Zertifizierter Business Coach
   - Langjährige Führungserfahrung
