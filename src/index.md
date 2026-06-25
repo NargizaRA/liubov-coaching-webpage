@@ -70,9 +70,9 @@ about_text: >+
 
 
 about_features:
-  - Zertifizierter Business Coach
-  - Langjährige Führungserfahrung
-  - Fokus auf nachhaltige Veränderung
+  - Zertifizierte systemische Business Coach (Quadriga Hochschule)
+  - Zertifizierte Trainerin für Kommunikation und Verhalten (artop Institut)
+  - MHFA Ersthelferin
 about_quote: '"Nur wer sich selbst führen kann, kann andere führen" Pater Anselm Grün'
 cta_title: Lassen Sie uns zusammenarbeiten
 footer_phone: auf Anfrage
