@@ -27,8 +27,15 @@ welcome_body: >-
 
   * Sie alte Verhaltensmuster aufbrechen wollen, um im Business-Alltag klarer und wirksamer zu kommunizieren.
 services_subtitle: Meine Expertise
-services_title: Schwerpunkte im Coaching
-services: []
+services_title: Wo kann ich Sie unterstützen?
+services:
+  - title: Karrierecoaching
+    bullets: []
+    desc: für berufliche Anfangs-, Übergangs- und Restartphasen
+  - title: Leadership-Coaching
+    desc: für erfahrene und angehende Führungskräfte
+  - title: Training zu Zeit- und Selbstmanagement
+    desc: Durch mehr Struktur zu mehr Freiheit und Gelassenheit
 about_subtitle: Berufliche Qualifikation
 about_title: Über Mich
 about_text: >+
