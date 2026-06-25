@@ -46,7 +46,7 @@ services:
       - Prioritäten setzen
       - "in komplexen Situationen handlungsfähig bleiben "
       - das eigene Führungs- und Kommunikationsverhalten systemisch reflektieren
-  - title: Training zu Zeit- und Selbstmanagement
+  - title: Maßgeschneiderte Trainings zu Zeit- und Selbstmanagement
     desc: Durch mehr Struktur zu mehr Freiheit und Gelassenheit
     bullets:
       - Fokus und Struktur im Arbeitsalltag
