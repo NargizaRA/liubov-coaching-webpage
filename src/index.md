@@ -2,9 +2,10 @@
 title: Liubov Mukash | Business Coach und Trainerin für Verhalten und Kommunikation
 hero_image: /assets/uploads/dsc03528.jpg
 hero_headline: Klarheit gewinnen. Potenzial entfalten. Wirksam gestalten.
-hero_subheadline: Als Business Coach und Trainerin begleite ich Menschen dabei,
-  Komplexität zu bewältigen, ihre Resilienz zu stärken und sich authentisch zu
-  positionieren.
+hero_subheadline: Als Business Coach und Trainerin begleite ich Menschen im
+  beruflichen Kontext dabei, Komplexität zu bewältigen, ihre Resilienz zu
+  stärken und sich authentisch zu positionieren – lösungsorientiert und mit
+  klarem Fokus auf die vorhandenen Ressourcen.
 welcome_lead: >-
   Veränderungen bedeuten intensive innere Arbeit. Sie erfordern Mut,
   Entschlossenheit und die Bereitschaft, sich selbst ehrlich zu begegnen. Ich
