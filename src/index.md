@@ -3,9 +3,8 @@ title: Liubov Mukash | Business Coach und Trainerin für Verhalten und Kommunika
 hero_image: /assets/uploads/dsc03528.jpg
 hero_headline: Klarheit gewinnen. Potenzial entfalten. Wirksam gestalten.
 hero_subheadline: Als Business Coach und Trainerin begleite ich Menschen im
-  beruflichen Kontext dabei, Komplexität zu bewältigen, ihre Resilienz zu
-  stärken und sich authentisch zu positionieren – lösungsorientiert und mit
-  klarem Fokus auf die vorhandenen Ressourcen.
+  beruflichen Kontext – lösungsorientiert und mit klarem Fokus auf die
+  vorhandenen Ressourcen.
 welcome_lead: >-
   Veränderungen bedeuten intensive innere Arbeit. Sie erfordern Mut,
   Entschlossenheit und die Bereitschaft, sich selbst ehrlich zu begegnen. Ich
@@ -75,7 +74,7 @@ about_features:
   - Zertifizierte Trainerin für Kommunikation und Verhalten (artop Institut)
   - MHFA Ersthelferin für psychische Gesundheit
 about_quote: '"Nur wer sich selbst führen kann, kann andere führen" Pater Anselm Grün'
-cta_title: Lassen Sie uns zusammenarbeiten
+cta_title: Sie wollen zusammenarbeiten oder haben Fragen?
 footer_phone: auf Anfrage
 layout: base.njk
 footer_email: kontakt@liubov-mukash.de
