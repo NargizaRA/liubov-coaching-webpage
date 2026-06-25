@@ -42,7 +42,7 @@ services:
       - Prioritätensetzung
       - Zeitmanagement
   - title: Karrierecoaching
-    desc: Orientierung in beruflichen Umbruchphasen.
+    desc: Karrierestart, Restart und Übergangsphasen
     bullets:
       - Standortbestimmung und Zieldefinition
       - Stärkenprofil und Potenzialanalyse
