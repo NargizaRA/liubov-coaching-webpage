@@ -51,7 +51,7 @@ about_features:
   - MHFA Ersthelferin für psychische Gesundheit
 about_quote: '"Nur wer sich selbst führen kann, kann andere führen" Pater Anselm Grün'
 cta_title: Sie wollen zusammenarbeiten oder haben Fragen?
-footer_phone: auf Anfrage
+footer_phone: ubrat
 layout: base.njk
 footer_email: kontakt@liubov-mukash.de
 footer_location: Berlin, Deutschland
