@@ -36,11 +36,11 @@ services:
       - Umgang mit Konflikten und Krisen
       - Entscheidungsfindung in komplexen Situationen
   - title: Selbstmanagement
-    desc: Gelassenheit und Effektivität im Berufsalltag.
+    desc: Überblick, Struktur und Plan
     bullets:
-      - Prioritätensetzung und Zeitmanagement
-      - Stressbewältigung und Resilienz
-      - Work-Life-Balance und Burnout-Prävention
+      - Komplexität bewältigen
+      - Prioritätensetzung
+      - Zeitmanagement
   - title: Karrierecoaching
     desc: Orientierung in beruflichen Umbruchphasen.
     bullets:
