@@ -72,7 +72,7 @@ about_text: >+
 about_features:
   - Zertifizierte systemische Business Coach (Quadriga Hochschule)
   - Zertifizierte Trainerin für Kommunikation und Verhalten (artop Institut)
-  - MHFA Ersthelferin
+  - MHFA Ersthelferin für psychische Gesundheit
 about_quote: '"Nur wer sich selbst führen kann, kann andere führen" Pater Anselm Grün'
 cta_title: Lassen Sie uns zusammenarbeiten
 footer_phone: auf Anfrage
