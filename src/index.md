@@ -26,8 +26,8 @@ welcome_body: >-
   * Sie vor komplexen beruflichen Entscheidungen stehen und eine neutrale Sparringspartnerin suchen, um Ihre Handlungsoptionen systemisch zu sortieren.
 
   * Sie alte Verhaltensmuster aufbrechen wollen, um im Business-Alltag klarer und wirksamer zu kommunizieren.
-services_subtitle: ubrat
-services_title: ubrat
+services_subtitle: Meine Expertise
+services_title: Schwerpunkte im Coaching
 services: []
 about_subtitle: Berufliche Qualifikation
 about_title: Über Mich
