@@ -31,24 +31,30 @@ services_title: Wo kann ich Sie unterstützen?
 services:
   - title: Karrierecoaching
     bullets:
-      - "-\tRollenklarheit gewinnen -\tEigene Kommunikation verbessern
-        -\tKomplexität entwirren und Klarheit gewinnen  -\tMut zur Veränderung
-        entwickeln  -\tResilienz & Ressourcen stärken -\tmit neuer Energie und
-        Fokus durchstarten"
+      - Rollenklarheit gewinnen
+      - Eigene Kommunikation verbessern
+      - Komplexität entwirren und Klarheit gewinnen
+      - Mut zur Veränderung entwickeln
+      - Resilienz & Ressourcen stärken
+      - mit neuer Energie und Fokus durchstarten
     desc: für berufliche Anfangs-, Übergangs- und Restartphasen
   - title: Leadership-Coaching
     desc: für erfahrene und angehende Führungskräfte
     bullets:
-      - "-\tRollenwechsel: vom Teammitglied zur Führungskraft
-        -\tFührungsidentität aufbauen -\tPrioritäten setzen -\tin komplexen
-        Situationen handlunsfähig bleiben -\tdas eigene Führungs- und
-        Kommunikationsverhalten systemisch reflektieren"
+      - "Rollenwechsel: vom Teammitglied zur Führungskraft "
+      - Führungsidentität aufbauen
+      - Prioritäten setzen
+      - "in komplexen Situationen handlungsfähig bleiben "
+      - das eigene Führungs- und Kommunikationsverhalten systemisch reflektieren
   - title: Training zu Zeit- und Selbstmanagement
     desc: Durch mehr Struktur zu mehr Freiheit und Gelassenheit
     bullets:
-      - "-\tFokus und Struktur im Arbeitsalltag -\tKomplexität reduzieren
-        -\tStrategien gegen ständige Ablenkungen -\tSelbstmanagement & Resilienz
-        -\tSchutz der Energieressourcen -\tProkrastination überwinden"
+      - Fokus und Struktur im Arbeitsalltag
+      - Komplexität reduzieren
+      - Strategien gegen ständige Ablenkungen
+      - Selbstmanagement & Resilienz
+      - Schutz der Ressourcen
+      - Prokrastination überwinden
 about_subtitle: Berufliche Qualifikation
 about_title: Über Mich
 about_text: >+
