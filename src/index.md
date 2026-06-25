@@ -26,33 +26,9 @@ welcome_body: >-
   * Sie vor komplexen beruflichen Entscheidungen stehen und eine neutrale Sparringspartnerin suchen, um Ihre Handlungsoptionen systemisch zu sortieren.
 
   * Sie alte Verhaltensmuster aufbrechen wollen, um im Business-Alltag klarer und wirksamer zu kommunizieren.
-services_subtitle: Meine Expertise
-services_title: Schwerpunkte im Coaching
-services:
-  - title: Leadership-Coaching
-    desc: Für erfahrene und angehende Führungskräfte.
-    bullets:
-      - Reflexion des eigenen Führungsstils
-      - Umgang mit Konflikten und Krisen
-      - Entscheidungsfindung in komplexen Situationen
-  - title: Selbstmanagement
-    desc: Überblick, Struktur und Plan
-    bullets:
-      - Komplexität bewältigen
-      - Prioritätensetzung
-      - Zeitmanagement
-  - title: Karrierecoaching
-    desc: Karrierestart, Restart und Übergangsphasen
-    bullets:
-      - Standortbestimmung und Zieldefinition
-      - Stärkenprofil und Potenzialanalyse
-      - Bewerbungsstrategien und Vorbereitung
-  - title: Team-Entwicklung
-    desc: Zusammenarbeit stärken und Konflikte lösen.
-    bullets:
-      - Teambuilding und Rollenklärung
-      - Kommunikation und Feedbackkultur
-      - Change-Management im Team begleiten
+services_subtitle: ubrat
+services_title: ubrat
+services: []
 about_subtitle: Berufliche Qualifikation
 about_title: Über Mich
 about_text: >+
